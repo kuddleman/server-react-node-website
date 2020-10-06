@@ -1,5 +1,8 @@
+const sgMail = require('@sendgrid/mail')
+
+sqMail.setApiKey(process.env.SENDGRID_API_KEY)
+
+
 exports.emailFeedback = (req, res) =>{
-  res.json({
-    data: 'you hit api from controllers'
-  })
+  console.log(req.body)
 }
